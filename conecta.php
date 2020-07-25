@@ -1,18 +1,17 @@
 <?php
-
     $host = "localhost";
     $usuario = "root";
     $senha = "";
-    $banco = "uninove";
+    $banco = "biblioteca";
 
-    $conexao = new MySQLi("$host", "$usuario", "$senha", "$banco");
-
-    $conexao->set_charset("utf8");
+    $conexao = new MySQLi($host, $usuario, $senha, $banco);
 
     if ($conexao -> connect_error) {
-        echo "Erro de conexão";
-    }  else {
-        echo "Conexão bem sucedida!";
+        echo "Erro de Conexão";
     }
-    
+    else{
+        //echo"CONECTADO";
+    }
+
+
 ?>
